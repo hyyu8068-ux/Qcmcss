@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>QCM CSS – Entraînement</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.qcm {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.question {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 5px solid #007BFF;
+    background: #fdfdfd;
+    border-radius: 6px;
+}
+
+.reponse {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e8f0ff;
+    border-radius: 5px;
+    display: none;      /* caché par défaut */
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005fcc;
+}
+</style>
+
+<script>
+function toggleRep(id) {
+    const block = document.getElementById(id);
+    block.style.display = (block.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</head>
+<body>
+
+<h1>QCM CSS – Révision complète</h1>
+
+<div class="qcm">
+
+    <!-- Question 1 -->
+    <div class="question">
+        <b>1. Quel sélecteur cible un identifiant ?</b><br>
+        A. .menu<br>
+        B. #menu<br>
+        C. menu<br>
+        D. menu#id<br>
+        <button onclick="toggleRep('rep1')">Afficher la correction</button>
+        <div class="reponse" id="rep1">
+            Réponse : <b>B. #menu</b>
+        </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+        <b>2. Quelle propriété enlève le soulignement d’un lien ?</b><br>
+        A. text-align<br>
+        B. underline: none<br>
+        C. text-decoration: none<br>
+        D. decoration-remove<br>
+        <button onclick="toggleRep('rep2')">Afficher la correction</button>
+        <div class="reponse" id="rep2">
+            Réponse : <b>C. text-decoration: none</b>
+        </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question">
+        <b>3. Quelle propriété place les éléments horizontalement en Flexbox ?</b><br>
+        A. flex-direction: column<br>
+        B. flex-order<br>
+        C. justify-content<br>
+        D. flex-direction: row<br>
+        <button onclick="toggleRep('rep3')">Afficher la correction</button>
+        <div class="reponse" id="rep3">
+            Réponse : <b>D. flex-direction: row</b>
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question">
+        <b>4. Que fait display: inline-block ?</b><br>
+        A. Prend toute la ligne<br>
+        B. Ne peut pas avoir de width<br>
+        C. Reste en ligne et peut avoir une taille<br>
+        D. S’affiche uniquement en colonne<br>
+        <button onclick="toggleRep('rep4')">Afficher la correction</button>
+        <div class="reponse" id="rep4">
+            Réponse : <b>C</b>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question">
+        <b>5. Quelle propriété arrondit les coins ?</b><br>
+        A. border-rounding<br>
+        B. border-radius<br>
+        C. radius-corner<br>
+        D. border-curve<br>
+        <button onclick="toggleRep('rep5')">Afficher la correction</button>
+        <div class="reponse" id="rep5">
+            Réponse : <b>B. border-radius</b>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question">
+        <b>6. Quel code active une media query pour smartphone (max 768px) ?</b><br>
+        A. @phone (768)<br>
+        B. @media (max-width: 768px)<br>
+        C. media-query smartphone()<br>
+        D. @smartphone width 768<br>
+        <button onclick="toggleRep('rep6')">Afficher la correction</button>
+        <div class="reponse" id="rep6">
+            Réponse : <b>B</b>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question">
+        <b>7. justify-content centre les éléments sur…</b><br>
+        A. l’axe secondaire<br>
+        B. l’axe principal<br>
+        C. la largeur totale<br>
+        D. le texte<br>
+        <button onclick="toggleRep('rep7')">Afficher la correction</button>
+        <div class="reponse" id="rep7">
+            Réponse : <b>B. l’axe principal</b>
+        </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question">
+        <b>8. Quelle unité dépend de la racine html ?</b><br>
+        A. px<br>
+        B. em<br>
+        C. rem<br>
+        D. %<br>
+        <button onclick="toggleRep('rep8')">Afficher la correction</button>
+        <div class="reponse" id="rep8">
+            Réponse : <b>C. rem</b>
+        </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question">
+        <b>9. Quelle propriété enlève les puces d’une liste ?</b><br>
+        A. dot:none<br>
+        B. no-bullet<br>
+        C. list-style-type: none<br>
+        D. remove-style<br>
+        <button onclick="toggleRep('rep9')">Afficher la correction</button>
+        <div class="reponse" id="rep9">
+            Réponse : <b>C. list-style-type: none</b>
+        </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question">
+        <b>10. Quelle propriété aligne verticalement (en row) en Flexbox ?</b><br>
+        A. align-items<br>
+        B. justify-content<br>
+        C. vertical-align<br>
+        D. align-content<br>
+        <button onclick="toggleRep('rep10')">Afficher la correction</button>
+        <div class="reponse" id="rep10">
+            Réponse : <b>A. align-items</b>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
